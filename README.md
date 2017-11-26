@@ -23,7 +23,7 @@ https://cdn.rawgit.com/lamhotsimamora/Filter-Kata-Kotor/master/filter-bad-word.j
 ### How to use ?
 ----------
 ## First 
-#### Function with default dictionary of bad word and default filter string "***"
+#### Function with default dictionary (Indonesia language) of bad word and default filter string "***"
 ```
 var my_string = "Awas kau ya BABI !";
 
@@ -31,7 +31,7 @@ var result = _filterBadWord(my_string);
 ```
 ----------
 ## Second 
-#### Function with default dictionary of bad word and with custom filter string "####" (any character that you want)
+#### Function with default dictionary (Indonesia language) of bad word and with custom filter string "####" (any character that you want)
 
 ```
 var my_string = "Awas kau ya BABI !";
