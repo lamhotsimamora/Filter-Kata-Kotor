@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Filter Kata-Kata Kotor {Javascript}</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.rawgit.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="filter-bad-word.js"></script>
+	<meta property="og:description" content="Filter kata-kata kotor dengan menggunakan Javscript " />
+	<meta property="og:url" content="https://lamhotsimamora.github.io/Filter-Kata-Kotor/" />
+	<meta property="og:type"          content="website" />
+	<meta name="Author" 		content="Lamhot Simamora" />
+	<meta name="copyright" 		content="copyright@2017" />
+	<meta name="language" 		  content="Indonesian, English" />
+	<meta name="distribution" 	  content="Global" />
+	<meta name="rating" 		  content="General" />
+	<meta name="expires" 		  content="1800" />
+	<meta name="theme-color"      content="#1D1C1C">
+	<link rel="shortcut icon" type="image/png" href="icon.png"/>	
+	
+</head>
+<body>
+	 
+<div class="container">
+			
+		<hr>
+			
+		<div class="jumbotron">
+			</br>
+		</br>
+		<center>
+				<h3>
+					Filter Kata-Kata Kotor </br>
+			<a href="https://lamhotsimamora.github.io/Filter-Kata-Kotor/" target="_blank"> Github </a> </br>
+				</h3>
+			</center></br>
+			<hr>
+		<p>
+			Kumpulan Kata-Kata kotor
+		</p>
+		<textarea id="my_bad_word" class="form-control"></textarea>
+		</br>
+		</br>
+
+		<hr>
+
+		<button class="btn btn-primary btn-md" id="btn_filter">Filter</button></br></br>
+		<p>
+			Text
+		</p>
+
+		<textarea class="form-control" placeholder="Masukkan Kata" id="my_text">Kamu kontol anjing, Gak ada OTAK mu ! Kugigit nanti kau ! BANGSAT ! You are really fucking bitch ! Asshole !</textarea> </br>
+		<p>
+			Hasil penyaringan
+		</p>
+			<textarea class="form-control" id="my_result" placeholder="Result 1"></textarea></br></br>
+			<textarea class="form-control" id="my_result2" placeholder="Result 2"></textarea></br></br>
+                        <textarea class="form-control" id="my_result3" placeholder="Result 3"></textarea></br>
+		</div>
+</div>
+
+	
+<script type="text/javascript">
+
+_onClick("btn_filter",function(){
+	filter();
+});
+
+function filter(){
+	  var text = _getValById("my_text");
+
+	  if (text==='')
+	  {
+	  	  _focus("my_text");
+	  	  return;
+	  }
+	  
+	  /**
+	   * _filterBadWord(Text,Array of Bad word,Text to Filter);
+	   * return String
+	   */
+	  var result = _filterBadWord(text);
+	  var result2 = _filterBadWord(text,'###');   
+	
+          const $my_custom = [
+	  	'bitch','fucking','asshole'
+	  ]
+	  var result3 = _filterBadWord(text,'...',$my_custom);
+	
+	  _setValue("my_result",result);
+	  _setValue("my_result2",result2);
+	  _setValue("my_result3",result3);
+}
+
+_setValue("my_bad_word",_badWord);		
+</script>
+
+</body>
+</html>
