@@ -1,3 +1,5 @@
+// Source https://raw.githubusercontent.com/lamhotsimamora/Filter-Kata-Kotor/master/filter-bad-word.js
+// License https://raw.githubusercontent.com/lamhotsimamora/Filter-Kata-Kotor/master/LICENSE
 const _badWord = [
 	'Anjing','Babi','Monyet','Kunyuk','Bajingan','Asu','Bangsat'
 	,'Kampret','Kontol','Memek','Ngentot','Pentil','Perek','Pepek'
