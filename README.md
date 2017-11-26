@@ -4,6 +4,11 @@ This repository is just an example for filtering of bad words with JAVASCRIPT an
 Enjoy ! Please share this page if you like it ! (Sorry ! if the bad words is too HARD to say ! ) (Source bad words from Google)
 
 ----------
+### Clone
+```
+git clone https://github.com/lamhotsimamora/Filter-Kata-Kotor.git
+```
+
 ### DEMO 
 
 https://lamhotsimamora.github.io/Filter-Kata-Kotor/
