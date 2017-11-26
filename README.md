@@ -22,7 +22,7 @@ https://cdn.rawgit.com/lamhotsimamora/Filter-Kata-Kotor/master/filter-bad-word.j
 
 ### HTML
 ```
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/lamhotsimamora/Filter-Kata-Kotor/master/filter-bad-word.js">
+<script type="text/javascript" src="https://cdn.rawgit.com/lamhotsimamora/Filter-Kata-Kotor/master/filter-bad-word.js"></script>
 ```
 ----------
 ### How to use ?
