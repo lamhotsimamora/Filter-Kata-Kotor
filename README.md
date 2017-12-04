@@ -1,7 +1,8 @@
 # Filter-Kata-Kotor
 
 This repository is just an example for filtering of bad words with JAVASCRIPT and also you can use this library for your website. 
-Enjoy ! Please share this page if you like it ! (Sorry ! if the bad words is too HARD to say ! ) (Source bad words from Google)
+Enjoy ! Please share this page if you like it ! (Sorry ! if the bad words is too HARD to say ! ) (Source bad words from Google).
+I was used this library for my website (http://x.lamhotsimamora.com/)
 
 ----------
 ### Clone
